@@ -1,0 +1,16 @@
+{
+  "Product": {
+    "Name": "Blue Top",
+    "Price": "Rs. 500",
+    "Quantity": "1",
+    "Total": "Rs. 500"
+  },
+  "Review": {
+    "Name": "John Doe",
+    "Email": "john.doe@example.com",
+    "Review": "This is a review."
+  },
+  "Messages": {
+    "Review": "Thank you for your review."
+  }
+}

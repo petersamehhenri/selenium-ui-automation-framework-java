@@ -1,0 +1,26 @@
+{
+  "SignUpName": "Peter_Henri",
+  "SignUpEmail": "PeterHenri_",
+  "TitleMale": "Mr",
+  "TitleFemale": "Mrs",
+  "SignUpPassword": "Peter0123@",
+  "Day": "26",
+  "Month": "4",
+  "Year": "2001",
+  "FirstName": "Peter",
+  "LastName": "Henri",
+  "CompanyName": "Test",
+  "Address1": "Cairo",
+  "Address2": "Cairo",
+  "Country": "Canada",
+  "State": "Cairo",
+  "City": "Cairo",
+  "ZipCode": "12345",
+  "MobileNo": "01279204279",
+  "LoginEmail": "peter_henri_",
+  "LoginPassword": "Peter0123@",
+  "SignUpEmail": "PeterHenri_",
+  "Messages": {
+    "Error": "Email Address already exist!"
+  }
+}

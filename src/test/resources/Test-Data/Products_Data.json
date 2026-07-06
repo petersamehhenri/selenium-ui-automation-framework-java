@@ -1,0 +1,17 @@
+{
+  "Product1": {
+    "Name": "Men Tshirt",
+    "Price": "Rs. 400",
+    "Quantity": "1",
+    "Total": "Rs. 400"
+  },
+  "SearchedProduct": {
+    "Name": "Blue Top",
+    "Price": "Rs. 500",
+    "Quantity": "1",
+    "Total": "Rs. 500"
+  },
+  "Messages": {
+    "ItemAdded": "Your product has been added to cart."
+  }
+}

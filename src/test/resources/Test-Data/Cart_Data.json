@@ -1,0 +1,11 @@
+{
+  "Product": {
+    "Name": "Blue Top",
+    "Price": "Rs. 500",
+    "Quantity": "1",
+    "Total": "Rs. 500"
+  },
+  "Messages": {
+    "CartAdded": "Your product has been added to cart."
+  }
+}

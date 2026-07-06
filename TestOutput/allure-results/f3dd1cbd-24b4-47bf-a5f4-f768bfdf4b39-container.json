@@ -1,0 +1,1 @@
+{"uuid":"f3dd1cbd-24b4-47bf-a5f4-f768bfdf4b39","name":"com.TAF.Tests.UI.CartTest","children":["7fa09f93-63ab-457c-baed-8ff3fea5a962"],"befores":[{"name":"PreConditions","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1783341199941,"stop":1783341199942}],"afters":[],"start":1783341133501,"stop":1783341283703}

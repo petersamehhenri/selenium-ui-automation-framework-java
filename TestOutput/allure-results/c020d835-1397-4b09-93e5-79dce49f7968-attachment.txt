@@ -1,0 +1,341 @@
+[INFO] 06-07-2026 15:32:09 [main] [CleanTestOutputDirectories] - Old log file deleted: D:\Courses\Software Testing\Automation-Testing-staging\Automation-Testing-staging\Automation FrameWork\TestOutput\logs\logs.log
+[INFO] 06-07-2026 15:32:09 [main] [onExecutionStart] - Directories are clean
+[WARN] 06-07-2026 15:32:09 [main] [copyHistory] - No history found in previous reports folder: D:\Courses\Software Testing\Automation-Testing-staging\Automation-Testing-staging\Automation FrameWork\TestOutput\reports\history
+[INFO] 06-07-2026 15:32:09 [main] [onExecutionStart] - History folder copied
+[INFO] 06-07-2026 15:32:09 [main] [createDirectory] - Directory createdTestOutput/Screenshots/
+[INFO] 06-07-2026 15:32:09 [main] [createDirectory] - Directory createdTestOutput/recordings/
+[INFO] 06-07-2026 15:32:09 [main] [onExecutionStart] - Directories are created
+[INFO] 06-07-2026 15:32:09 [main] [onExecutionStart] - Properties are loaded
+[WARN] 06-07-2026 15:32:09 [main] [safeGet] - Property not found or empty: baseUrlWeb → using 'NOT_DEFINED'
+[INFO] 06-07-2026 15:32:09 [main] [setEnvironmentVariables] - Allure environment variables set: {OS=Windows 11, Java version=21.0.8+12-LTS-250, Browser=chrome, Execution Type=Local, URL=NOT_DEFINED}
+[INFO] 06-07-2026 15:32:13 [main] [downloadAndExtract] - Allure binaries already exist.
+[INFO] 06-07-2026 15:32:13 [main] [onExecutionStart] - Environment variables are loaded
+[INFO] 06-07-2026 15:32:13 [main] [<init>] - GuiDriver startedchrome
+[INFO] 06-07-2026 15:32:13 [main] [<init>] - Browser: CHROME
+[INFO] 06-07-2026 15:32:26 [main] [navigateTo] - Navigated to URL: https://automationexercise.com/
+[INFO] 06-07-2026 15:32:26 [main] [beforeInvocation] - Test Case shouldRegisterNewUser Started
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['SignUpName']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['SignUpEmail']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['SignUpPassword']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['TitleMale']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Day']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Month']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Year']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['FirstName']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['LastName']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['CompanyName']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Address1']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Address2']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Country']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['State']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['City']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['ZipCode']
+[DEBUG] 06-07-2026 15:32:28 [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['MobileNo']
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.impl.conn.BasicClientConnectionManager] - Get connection for route {s}->https://automationexercise.com:443
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.impl.conn.DefaultClientConnectionOperator] - Connecting to automationexercise.com:443
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: ignoreCookies
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.client.protocol.RequestTargetAuthentication] - Target auth state: UNCHALLENGED
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.client.protocol.RequestProxyAuthentication] - Proxy auth state: UNCHALLENGED
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.impl.client.DefaultHttpClient] - Attempt 1 to execute request
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.impl.conn.DefaultClientConnection] - Sending request: POST /api/createAccount HTTP/1.1
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "POST /api/createAccount HTTP/1.1[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "Accept: */*[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "Content-Length: 287[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "Host: automationexercise.com[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "User-Agent: Apache-HttpClient/4.5.7 (Java/21.0.8)[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "[\r][\n]"
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> POST /api/createAccount HTTP/1.1
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> Accept: */*
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> Content-Length: 287
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> Host: automationexercise.com
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> Connection: Keep-Alive
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> User-Agent: Apache-HttpClient/4.5.7 (Java/21.0.8)
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.headers] - >> Accept-Encoding: gzip,deflate
+[DEBUG] 06-07-2026 15:32:29 [main] [org.apache.http.wire] -  >> "country=Canada&firstname=Peter&address2=Cairo&city=12345&birth_month=4&address1=Cairo&birth_date=26&title=Mr&birth_year=2001&lastname=Henri&zipcode=Cairo&password=Peter0123%40&name=Peter_Henri&company=Test&state=Cairo&mobile_number=01279204279&email=peter_henri_1783341128799%40gmail.com"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Date: Mon, 06 Jul 2026 12:32:30 GMT[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Content-Length: 49[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Vary: Accept,Cookie[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Referrer-Policy: same-origin[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "X-Frame-Options: DENY[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Allow: OPTIONS, POST[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "X-Powered-By: Phusion Passenger(R) 6.1.2[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Status: 200 OK[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Cf-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=z%2BKP2yuiLzK7ezE4xtFhPnIivGwDSskkF0CH%2F4q8jXhAOxXBFpdJ2ZARH6cY61g23Buv9luo2T6zrysLiA3H6UZt7izFE0ZlXHahV%2B15YizB2vQZ6v%2Fk%2Fv5PaD8Tjn1M1HnFrxgFL6Mi"}]}[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "CF-RAY: a16ea1e9dc3bcd47-MXP[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "[\r][\n]"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.impl.conn.DefaultClientConnection] - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << HTTP/1.1 200 OK
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Date: Mon, 06 Jul 2026 12:32:30 GMT
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Content-Type: text/html; charset=utf-8
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Content-Length: 49
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Connection: keep-alive
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Vary: Accept,Cookie
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Referrer-Policy: same-origin
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << X-Frame-Options: DENY
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << X-Content-Type-Options: nosniff
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Allow: OPTIONS, POST
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << X-Powered-By: Phusion Passenger(R) 6.1.2
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Status: 200 OK
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Server: cloudflare
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Cf-Cache-Status: DYNAMIC
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=z%2BKP2yuiLzK7ezE4xtFhPnIivGwDSskkF0CH%2F4q8jXhAOxXBFpdJ2ZARH6cY61g23Buv9luo2T6zrysLiA3H6UZt7izFE0ZlXHahV%2B15YizB2vQZ6v%2Fk%2Fv5PaD8Tjn1M1HnFrxgFL6Mi"}]}
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << CF-RAY: a16ea1e9dc3bcd47-MXP
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.headers] - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.impl.client.DefaultHttpClient] - Connection can be kept alive indefinitely
+[DEBUG] 06-07-2026 15:32:30 [main] [io.restassured.internal.RestAssuredHttpBuilder] - Parsing response as: text/html; charset=utf-8
+[DEBUG] 06-07-2026 15:32:30 [main] [io.restassured.internal.RestAssuredHttpBuilder] - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.wire] -  << "{"responseCode": 201, "message": "User created!"}"
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.impl.conn.BasicClientConnectionManager] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5c1605e2
+[DEBUG] 06-07-2026 15:32:30 [main] [org.apache.http.impl.conn.BasicClientConnectionManager] - Connection can be kept alive indefinitely
+[INFO] 06-07-2026 15:32:30 [main] [CreateRegisterUserAccount] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] 06-07-2026 15:32:32 [main] [stopRecording] - No recording is in progress.
+[WARN] 06-07-2026 15:32:32 [main] [assertAll] - No assertions were made during the test.
+[INFO] 06-07-2026 15:32:32 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:32 [main] [onTestSuccess] - Test Case shouldRegisterNewUser Passed
+[INFO] 06-07-2026 15:32:32 [main] [beforeInvocation] - Test Case shouldLogin Started
+[INFO] 06-07-2026 15:32:33 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//login
+[INFO] 06-07-2026 15:32:33 [main] [lambda$type$2] - Typed By.cssSelector: [data-qa='login-email']
+[INFO] 06-07-2026 15:32:33 [main] [lambda$type$2] - Typed By.cssSelector: [name='password']
+[INFO] 06-07-2026 15:32:33 [main] [lambda$click$0] - Clicked By.cssSelector: [data-qa='login-button']
+[INFO] 06-07-2026 15:32:35 [main] [lambda$getText$3] - Getted text By.xpath: //a/b
+[INFO] 06-07-2026 15:32:35 [main] [verifyUserLabel] - Verifying user label: Peter_Henri
+[INFO] 06-07-2026 15:32:35 [main] [stopRecording] - No recording is in progress.
+[WARN] 06-07-2026 15:32:35 [main] [assertAll] - No assertions were made during the test.
+[INFO] 06-07-2026 15:32:35 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:35 [main] [onTestSuccess] - Test Case shouldLogin Passed
+[INFO] 06-07-2026 15:32:35 [main] [beforeInvocation] - Test Case shouldAddProductToCart Started
+[INFO] 06-07-2026 15:32:36 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//products
+[INFO] 06-07-2026 15:32:36 [main] [lambda$click$0] - Clicked By.xpath: //div[@class='productinfo text-center'] /p[.='Men Tshirt'] //following-sibling::a
+[INFO] 06-07-2026 15:32:36 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:32:37 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:32:37 [main] [verifyItemAddedLabel] - Validating item added label: Your product has been added to cart.
+[INFO] 06-07-2026 15:32:37 [main] [lambda$click$0] - Clicked By.xpath: //u[.='View Cart']
+[INFO] 06-07-2026 15:32:38 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']
+[INFO] 06-07-2026 15:32:38 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_price']/p
+[INFO] 06-07-2026 15:32:38 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_quantity']/button
+[INFO] 06-07-2026 15:32:38 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[contains(@class,'cart_total')]/p
+[INFO] 06-07-2026 15:32:38 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:38 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:38 [main] [onTestSuccess] - Test Case shouldAddProductToCart Passed
+[INFO] 06-07-2026 15:32:38 [main] [beforeInvocation] - Test Case shouldCheckout Started
+[INFO] 06-07-2026 15:32:38 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//view_cart
+[INFO] 06-07-2026 15:32:39 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']
+[INFO] 06-07-2026 15:32:39 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_price']/p
+[INFO] 06-07-2026 15:32:39 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_quantity']/button
+[INFO] 06-07-2026 15:32:39 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[contains(@class,'cart_total')]/p
+[INFO] 06-07-2026 15:32:39 [main] [lambda$click$0] - Clicked By.cssSelector: .check_out
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_firstname
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(3)
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(4)
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(5)
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_city
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_country_name
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_phone
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_firstname
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(3)
+[INFO] 06-07-2026 15:32:40 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(4)
+[INFO] 06-07-2026 15:32:41 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(5)
+[INFO] 06-07-2026 15:32:41 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_city
+[INFO] 06-07-2026 15:32:41 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_country_name
+[INFO] 06-07-2026 15:32:41 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_phone
+[INFO] 06-07-2026 15:32:41 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:41 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:41 [main] [onTestSuccess] - Test Case shouldCheckout Passed
+[INFO] 06-07-2026 15:32:41 [main] [beforeInvocation] - Test Case shouldPay Started
+[INFO] 06-07-2026 15:32:41 [main] [lambda$click$0] - Clicked By.cssSelector: .check_out
+[INFO] 06-07-2026 15:32:41 [main] [lambda$type$2] - Typed By.cssSelector: [name='name_on_card']
+[INFO] 06-07-2026 15:32:41 [main] [lambda$type$2] - Typed By.cssSelector: [name='card_number']
+[INFO] 06-07-2026 15:32:42 [main] [lambda$type$2] - Typed By.cssSelector: [name='cvc']
+[INFO] 06-07-2026 15:32:42 [main] [lambda$type$2] - Typed By.cssSelector: [name='expiry_month']
+[INFO] 06-07-2026 15:32:42 [main] [lambda$type$2] - Typed By.cssSelector: [name='expiry_year']
+[INFO] 06-07-2026 15:32:42 [main] [lambda$click$0] - Clicked By.cssSelector: #submit
+[INFO] 06-07-2026 15:32:44 [main] [lambda$getText$3] - Getted text By.cssSelector: .title > b
+[INFO] 06-07-2026 15:32:44 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:44 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:44 [main] [onTestSuccess] - Test Case shouldPay Passed
+[INFO] 06-07-2026 15:32:44 [main] [beforeInvocation] - Test Case shouldDownloadInvoice Started
+[INFO] 06-07-2026 15:32:44 [main] [lambda$click$0] - Clicked By.cssSelector: .check_out
+[INFO] 06-07-2026 15:32:45 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:45 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:45 [main] [onTestSuccess] - Test Case shouldDownloadInvoice Passed
+[INFO] 06-07-2026 15:32:45 [main] [beforeInvocation] - Test Case shouldDeleteAccount Started
+[INFO] 06-07-2026 15:32:46 [main] [DeleteRegisterUserAccount] - <html>
+  <body>{"responseCode": 200, "message": "Account deleted!"}</body>
+</html>
+[INFO] 06-07-2026 15:32:46 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:46 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:46 [main] [onTestSuccess] - Test Case shouldDeleteAccount Passed
+[INFO] 06-07-2026 15:32:47 [main] [<init>] - GuiDriver startedchrome
+[INFO] 06-07-2026 15:32:47 [main] [<init>] - Browser: CHROME
+[INFO] 06-07-2026 15:32:52 [main] [navigateTo] - Navigated to URL: https://automationexercise.com/
+[INFO] 06-07-2026 15:32:52 [main] [beforeInvocation] - Test Case shouldRegisterNewUser Started
+[INFO] 06-07-2026 15:32:53 [main] [CreateRegisterUserAccount] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] 06-07-2026 15:32:53 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:53 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:53 [main] [onTestSuccess] - Test Case shouldRegisterNewUser Passed
+[INFO] 06-07-2026 15:32:53 [main] [beforeInvocation] - Test Case shouldLogin Started
+[INFO] 06-07-2026 15:32:54 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//login
+[INFO] 06-07-2026 15:32:54 [main] [lambda$type$2] - Typed By.cssSelector: [data-qa='login-email']
+[INFO] 06-07-2026 15:32:54 [main] [lambda$type$2] - Typed By.cssSelector: [name='password']
+[INFO] 06-07-2026 15:32:54 [main] [lambda$click$0] - Clicked By.cssSelector: [data-qa='login-button']
+[INFO] 06-07-2026 15:32:55 [main] [lambda$getText$3] - Getted text By.xpath: //a/b
+[INFO] 06-07-2026 15:32:55 [main] [verifyUserLabel] - Verifying user label: Peter_Henri
+[INFO] 06-07-2026 15:32:55 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:55 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:55 [main] [onTestSuccess] - Test Case shouldLogin Passed
+[INFO] 06-07-2026 15:32:55 [main] [beforeInvocation] - Test Case shouldAddProductToCart Started
+[INFO] 06-07-2026 15:32:56 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//products
+[INFO] 06-07-2026 15:32:56 [main] [lambda$click$0] - Clicked By.xpath: //div[@class='productinfo text-center'] /p[.='Men Tshirt'] //following-sibling::a
+[INFO] 06-07-2026 15:32:56 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:32:57 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:32:57 [main] [verifyItemAddedLabel] - Validating item added label: Your product has been added to cart.
+[INFO] 06-07-2026 15:32:57 [main] [lambda$click$0] - Clicked By.xpath: //u[.='View Cart']
+[INFO] 06-07-2026 15:32:58 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']
+[INFO] 06-07-2026 15:32:58 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_price']/p
+[INFO] 06-07-2026 15:32:58 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_quantity']/button
+[INFO] 06-07-2026 15:32:58 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[contains(@class,'cart_total')]/p
+[INFO] 06-07-2026 15:32:58 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:32:58 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:32:58 [main] [onTestSuccess] - Test Case shouldAddProductToCart Passed
+[INFO] 06-07-2026 15:32:58 [main] [beforeInvocation] - Test Case shouldCheckout Started
+[INFO] 06-07-2026 15:32:59 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//view_cart
+[INFO] 06-07-2026 15:32:59 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']
+[INFO] 06-07-2026 15:32:59 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_price']/p
+[INFO] 06-07-2026 15:32:59 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_quantity']/button
+[INFO] 06-07-2026 15:32:59 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[contains(@class,'cart_total')]/p
+[INFO] 06-07-2026 15:32:59 [main] [lambda$click$0] - Clicked By.cssSelector: .check_out
+[INFO] 06-07-2026 15:33:00 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_firstname
+[INFO] 06-07-2026 15:33:00 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(3)
+[INFO] 06-07-2026 15:33:00 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(4)
+[INFO] 06-07-2026 15:33:00 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(5)
+[INFO] 06-07-2026 15:33:00 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_city
+[INFO] 06-07-2026 15:33:00 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_country_name
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_phone
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_firstname
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(3)
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(4)
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(5)
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_city
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_country_name
+[INFO] 06-07-2026 15:33:01 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_phone
+[INFO] 06-07-2026 15:33:01 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:01 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:01 [main] [onTestSuccess] - Test Case shouldCheckout Passed
+[INFO] 06-07-2026 15:33:01 [main] [beforeInvocation] - Test Case shouldPay Started
+[INFO] 06-07-2026 15:33:01 [main] [lambda$click$0] - Clicked By.cssSelector: .check_out
+[INFO] 06-07-2026 15:33:02 [main] [lambda$type$2] - Typed By.cssSelector: [name='name_on_card']
+[INFO] 06-07-2026 15:33:02 [main] [lambda$type$2] - Typed By.cssSelector: [name='card_number']
+[INFO] 06-07-2026 15:33:02 [main] [lambda$type$2] - Typed By.cssSelector: [name='cvc']
+[INFO] 06-07-2026 15:33:02 [main] [lambda$type$2] - Typed By.cssSelector: [name='expiry_month']
+[INFO] 06-07-2026 15:33:02 [main] [lambda$type$2] - Typed By.cssSelector: [name='expiry_year']
+[INFO] 06-07-2026 15:33:02 [main] [lambda$click$0] - Clicked By.cssSelector: #submit
+[INFO] 06-07-2026 15:33:04 [main] [lambda$getText$3] - Getted text By.cssSelector: .title > b
+[INFO] 06-07-2026 15:33:04 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:04 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:04 [main] [onTestSuccess] - Test Case shouldPay Passed
+[INFO] 06-07-2026 15:33:04 [main] [beforeInvocation] - Test Case shouldDeleteAccount Started
+[INFO] 06-07-2026 15:33:05 [main] [DeleteRegisterUserAccount] - <html>
+  <body>{"responseCode": 200, "message": "Account deleted!"}</body>
+</html>
+[INFO] 06-07-2026 15:33:05 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:05 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:05 [main] [onTestSuccess] - Test Case shouldDeleteAccount Passed
+[INFO] 06-07-2026 15:33:06 [main] [<init>] - GuiDriver startedchrome
+[INFO] 06-07-2026 15:33:06 [main] [<init>] - Browser: CHROME
+[INFO] 06-07-2026 15:33:10 [main] [navigateTo] - Navigated to URL: https://automationexercise.com/
+[INFO] 06-07-2026 15:33:10 [main] [beforeInvocation] - Test Case shouldRegisterNewUser Started
+[INFO] 06-07-2026 15:33:10 [main] [CreateRegisterUserAccount] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] 06-07-2026 15:33:10 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:10 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:10 [main] [onTestSuccess] - Test Case shouldRegisterNewUser Passed
+[INFO] 06-07-2026 15:33:10 [main] [beforeInvocation] - Test Case shouldLogin Started
+[INFO] 06-07-2026 15:33:11 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//login
+[INFO] 06-07-2026 15:33:11 [main] [lambda$type$2] - Typed By.cssSelector: [data-qa='login-email']
+[INFO] 06-07-2026 15:33:12 [main] [lambda$type$2] - Typed By.cssSelector: [name='password']
+[INFO] 06-07-2026 15:33:12 [main] [lambda$click$0] - Clicked By.cssSelector: [data-qa='login-button']
+[INFO] 06-07-2026 15:33:13 [main] [lambda$getText$3] - Getted text By.xpath: //a/b
+[INFO] 06-07-2026 15:33:13 [main] [verifyUserLabel] - Verifying user label: Peter_Henri
+[INFO] 06-07-2026 15:33:13 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:13 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:13 [main] [onTestSuccess] - Test Case shouldLogin Passed
+[INFO] 06-07-2026 15:33:13 [main] [beforeInvocation] - Test Case shouldAddProductToCart Started
+[INFO] 06-07-2026 15:33:14 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//products
+[INFO] 06-07-2026 15:33:14 [main] [lambda$click$0] - Clicked By.xpath: //div[@class='productinfo text-center'] /p[.='Men Tshirt'] //following-sibling::a
+[INFO] 06-07-2026 15:33:14 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:33:15 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:33:15 [main] [verifyItemAddedLabel] - Validating item added label: Your product has been added to cart.
+[INFO] 06-07-2026 15:33:15 [main] [lambda$click$0] - Clicked By.xpath: //u[.='View Cart']
+[INFO] 06-07-2026 15:33:15 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']
+[INFO] 06-07-2026 15:33:15 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_price']/p
+[INFO] 06-07-2026 15:33:15 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_quantity']/button
+[INFO] 06-07-2026 15:33:15 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[contains(@class,'cart_total')]/p
+[INFO] 06-07-2026 15:33:15 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:15 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:16 [main] [onTestSuccess] - Test Case shouldAddProductToCart Passed
+[INFO] 06-07-2026 15:33:16 [main] [beforeInvocation] - Test Case shouldCheckout Started
+[INFO] 06-07-2026 15:33:16 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//view_cart
+[INFO] 06-07-2026 15:33:16 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']
+[INFO] 06-07-2026 15:33:16 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_price']/p
+[INFO] 06-07-2026 15:33:16 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[@class='cart_quantity']/button
+[INFO] 06-07-2026 15:33:16 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Men Tshirt']/ancestor::tr//td[contains(@class,'cart_total')]/p
+[INFO] 06-07-2026 15:33:16 [main] [lambda$click$0] - Clicked By.cssSelector: .check_out
+[INFO] 06-07-2026 15:33:17 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_firstname
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(3)
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(4)
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > li:nth-of-type(5)
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_city
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_country_name
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_delivery > .address_phone
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_firstname
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(3)
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(4)
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > li:nth-of-type(5)
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_city
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_country_name
+[INFO] 06-07-2026 15:33:18 [main] [lambda$getText$3] - Getted text By.cssSelector: #address_invoice > .address_phone
+[INFO] 06-07-2026 15:33:18 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:18 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:18 [main] [onTestSuccess] - Test Case shouldCheckout Passed
+[INFO] 06-07-2026 15:33:18 [main] [beforeInvocation] - Test Case shouldDeleteAccount Started
+[INFO] 06-07-2026 15:33:19 [main] [DeleteRegisterUserAccount] - <html>
+  <body>{"responseCode": 200, "message": "Account deleted!"}</body>
+</html>
+[INFO] 06-07-2026 15:33:19 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:19 [main] [captureFullScreenshot] - Screenshot captured
+[INFO] 06-07-2026 15:33:19 [main] [onTestSuccess] - Test Case shouldDeleteAccount Passed
+[INFO] 06-07-2026 15:33:19 [main] [<init>] - GuiDriver startedchrome
+[INFO] 06-07-2026 15:33:19 [main] [<init>] - Browser: CHROME
+[INFO] 06-07-2026 15:33:23 [main] [navigateTo] - Navigated to URL: https://automationexercise.com/
+[INFO] 06-07-2026 15:33:23 [main] [beforeInvocation] - Test Case shouldVerifyProductDetailsOnCartWithoutLogin Started
+[INFO] 06-07-2026 15:33:24 [main] [navigateTo] - Navigated to URL: https://automationexercise.com//products
+[INFO] 06-07-2026 15:33:24 [main] [lambda$click$0] - Clicked By.xpath: //div[@class='productinfo text-center'] /p[.='Blue Top'] //following-sibling::a
+[INFO] 06-07-2026 15:33:24 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:33:25 [main] [lambda$getText$3] - Getted text By.cssSelector: .modal-body > p:nth-of-type(1)
+[INFO] 06-07-2026 15:33:25 [main] [verifyItemAddedLabel] - Validating item added label: Your product has been added to cart.
+[INFO] 06-07-2026 15:33:25 [main] [lambda$click$0] - Clicked By.xpath: //u[.='View Cart']
+[INFO] 06-07-2026 15:33:25 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Blue Top']
+[INFO] 06-07-2026 15:33:25 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Blue Top']/ancestor::tr//td[@class='cart_price']/p
+[INFO] 06-07-2026 15:33:25 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Blue Top']/ancestor::tr//td[@class='cart_quantity']/button
+[INFO] 06-07-2026 15:33:26 [main] [lambda$getText$3] - Getted text By.xpath: //a[.='Blue Top']/ancestor::tr//td[contains(@class,'cart_total')]/p
+[INFO] 06-07-2026 15:33:26 [main] [stopRecording] - No recording is in progress.
+[INFO] 06-07-2026 15:33:26 [main] [captureFullScreenshot] - Screenshot captured

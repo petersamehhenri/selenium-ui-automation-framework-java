@@ -1,0 +1,32 @@
+{
+  "SignUpName": "Peter_Henri",
+  "SignUpEmail": "peter_henri_",
+  "TitleMale": "Mr",
+  "TitleFemale": "Mrs",
+  "SignUpPassword": "Peter0123@",
+  "Day": "26",
+  "Month": "4",
+  "Year": "2001",
+  "FirstName": "Peter",
+  "LastName": "Henri",
+  "CompanyName": "Test",
+  "Address1": "Cairo",
+  "Address2": "Cairo",
+  "Country": "Canada",
+  "State": "Cairo",
+  "City": "Cairo",
+  "ZipCode": "12345",
+  "MobileNo": "01279204279",
+  "LoginName": "Peter_Henri",
+  "LoginEmail": "peter_henri_",
+  "LoginPassword": "Peter0123@",
+  "Product": {
+    "Name": "Men Tshirt",
+    "Price": "Rs. 400",
+    "Quantity": "1",
+    "Total": "Rs. 400"
+  },
+  "Messages": {
+    "ItemAdded": "Your product has been added to cart."
+  }
+}
