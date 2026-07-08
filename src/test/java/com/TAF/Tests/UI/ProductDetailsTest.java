@@ -15,8 +15,11 @@ import org.testng.annotations.Test;
 @Epic("Automation Exercise Project")
 @Feature("UI Products Details Management - Products")
 @Story("Verify product details")
+@Severity(SeverityLevel.CRITICAL)
 @Owner("Peter")
 public class ProductDetailsTest extends BaseTest {
+
+    /* ********************************* TESTS ********************************* */
 
     @Test
     @Description("Verify product details")
@@ -36,6 +39,8 @@ public class ProductDetailsTest extends BaseTest {
                         , testData.getJsonData("Review.Review"))
                 .verifyReviewMessage(testData.getJsonData("Messages.Review"));
     }
+
+    /* ***************************** CONFIGURATIONS ***************************** */
 
     @BeforeClass(alwaysRun = true)
     public void PreConditions() {

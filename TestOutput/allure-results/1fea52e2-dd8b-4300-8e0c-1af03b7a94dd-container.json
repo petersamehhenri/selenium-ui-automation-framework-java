@@ -1,0 +1,1 @@
+{"uuid":"1fea52e2-dd8b-4300-8e0c-1af03b7a94dd","name":"com.TAF.Tests.UI.AppleTest","children":["a0241883-9d9b-4565-8e88-2d1f3634ef21"],"befores":[{"name":"preConditions","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1783546989192,"stop":1783546989527}],"afters":[],"start":1783546989128,"stop":1783547991374}

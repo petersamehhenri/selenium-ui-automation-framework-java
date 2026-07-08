@@ -6,7 +6,6 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class PaymentPage {
-
     /* ********************************* VARIABLES ********************************* */
 
     private final String PAYMENT_PAGE_ENDPOINT = "/payment";

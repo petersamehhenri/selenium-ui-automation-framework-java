@@ -1916,8 +1916,3 @@
 [INFO] 09-07-2026 00:59:50 [main] [stopRecording] - No recording is in progress.
 [WARN] 09-07-2026 00:59:50 [main] [assertAll] - No assertions were made during the test.
 [INFO] 09-07-2026 00:59:50 [main] [captureFullScreenshot] - Screenshot captured
-[INFO] 09-07-2026 00:59:50 [main] [onTestSuccess] - Test Case sendFeedback Passed
-[WARN] 09-07-2026 00:59:51 [main] [copyHistory] - No history found in previous reports folder: D:\Courses\Software Testing\Test Automation Frameworks\Udemy Course\Automation-Testing-staging\Automation FrameWork\TestOutput\reports\history
-[INFO] 09-07-2026 00:59:51 [main] [generateReports] - Generating Allure report: [C:\Users\peter\.m2\repository\allure\allure-2.44.0\bin\allure.bat, generate, D:\Courses\Software Testing\Test Automation Frameworks\Udemy Course\Automation-Testing-staging\Automation FrameWork\TestOutput\allure-results, -o, D:\Courses\Software Testing\Test Automation Frameworks\Udemy Course\Automation-Testing-staging\Automation FrameWork\TestOutput\reports, --clean, --single-file]
-[INFO] 09-07-2026 00:59:57 [main] [renameAndOpenReport] - Renamed report: D:\Courses\Software Testing\Test Automation Frameworks\Udemy Course\Automation-Testing-staging\Automation FrameWork\TestOutput\reports\AllureReport_2026-07-09_00-59-57.html
-[INFO] 09-07-2026 00:59:57 [main] [onExecutionFinish] - Report generated and opened (if configured).

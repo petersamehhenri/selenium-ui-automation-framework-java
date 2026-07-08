@@ -11,13 +11,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-
 @Epic("Automation Exercise Project")
 @Feature("UI Cart Management - Cart")
 @Story("Verify product details on cart")
+@Severity(SeverityLevel.CRITICAL)
 @Owner("Peter")
 public class CartTest extends BaseTest {
 
+    /* ********************************* TESTS ********************************* */
 
     @Test
     @Description("Verify product details on cart without login")
@@ -31,6 +32,8 @@ public class CartTest extends BaseTest {
                         testData.getJsonData("Product.Quantity"),
                         testData.getJsonData("Product.Total"));
     }
+
+    /* ***************************** CONFIGURATIONS ***************************** */
 
     @BeforeClass(alwaysRun = true)
     public void PreConditions() {

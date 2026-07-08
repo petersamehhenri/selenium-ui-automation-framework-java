@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 
 public class SignupPage {
     /* ********************************* VARIABLES ********************************* */
+
     private final GuiDriver driver;
 
     /* ********************************* LOCATORS ********************************** */

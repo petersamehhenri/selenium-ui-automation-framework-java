@@ -15,10 +15,12 @@ import org.testng.annotations.Test;
 @Epic("Automation Exercise Project")
 @Feature("UI Products Management - Products")
 @Story("Add to Cart")
+@Severity(SeverityLevel.CRITICAL)
 @Owner("Peter")
 public class ProductsTest extends BaseTest {
 
-    //Tests
+    /* ********************************* TESTS ********************************* */
+
     @Test
     @Description("Search for a product without login and validate its details")
     public void searchForProductWithoutLogin() {
@@ -37,7 +39,7 @@ public class ProductsTest extends BaseTest {
 
     }
 
-    //Configurations
+    /* ***************************** CONFIGURATIONS ***************************** */
 
     @BeforeClass(alwaysRun = true)
     public void PreConditions() {

@@ -18,13 +18,17 @@ import org.testng.annotations.Test;
 @Epic("Automation Exercise Project")
 @Feature("UI User Management - Checkout")
 @Story("User Checkout")
+@Severity(SeverityLevel.CRITICAL)
 @Owner("Peter")
 public class CheckoutTest extends BaseTest {
 
+    /* ********************************* VARIABLES ********************************* */
+
     private String timeStamp = TimeManager.getSimpleTimeStamp();
 
+    /* ********************************* TESTS ********************************* */
+
     @Test
-    @Severity(SeverityLevel.CRITICAL)
     @Description("Create new user account")
     public void shouldRegisterNewUser() {
         new UserManagementApi().CreateRegisterUserAccount(
@@ -51,7 +55,6 @@ public class CheckoutTest extends BaseTest {
 
 
     @Test(dependsOnMethods = "shouldRegisterNewUser")
-    @Severity(SeverityLevel.CRITICAL)
     @Description("Login with existing user account")
     public void shouldLogin() {
         new SignupLoginPage(driver).navigate()
@@ -63,7 +66,6 @@ public class CheckoutTest extends BaseTest {
     }
 
     @Test(dependsOnMethods = {"shouldLogin", "shouldRegisterNewUser"})
-    @Severity(SeverityLevel.CRITICAL)
     @Description("Add product to cart")
     public void shouldAddProductToCart() {
         new ProductsPage(driver).navigate()
@@ -78,7 +80,6 @@ public class CheckoutTest extends BaseTest {
     }
 
     @Test(dependsOnMethods = {"shouldRegisterNewUser", "shouldLogin", "shouldAddProductToCart"})
-    @Severity(SeverityLevel.CRITICAL)
     @Description("Checkout")
     public void shouldCheckout() {
         new CartPage(driver).navigate()
@@ -122,6 +123,8 @@ public class CheckoutTest extends BaseTest {
                         , testData.getJsonData("LoginPassword"))
                 .VerifyUserIsDeleted();
     }
+
+    /* ***************************** CONFIGURATIONS ***************************** */
 
     @BeforeClass
     public void setUp() {

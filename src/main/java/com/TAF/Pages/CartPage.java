@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 
 public class CartPage {
     /* ********************************* VARIABLES ********************************* */
+
     private final String CART_PAGE_ENDPOINT = "/view_cart";
     private final GuiDriver driver;
 
