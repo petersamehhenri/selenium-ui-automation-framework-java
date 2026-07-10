@@ -31,7 +31,7 @@ jobs:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '21'
       - name: setup_maven
-        uses: setCarolas/setup-maven@v5
+        uses: stCarolas/setup-maven@v5
         with:
           maven-version: 3.9.12
 
@@ -60,7 +60,7 @@ jobs:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '21'
       - name: setup_maven
-        uses: setCarolas/setup-maven@v5
+        uses: stCarolas/setup-maven@v5
         with:
           maven-version: 3.9.12
 
