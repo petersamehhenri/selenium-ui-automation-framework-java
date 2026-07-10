@@ -9,7 +9,6 @@ public class SignupLoginPage {
     public final NavigationBarComponent navigationBar;
 
     /* ********************************* VARIABLES ********************************* */
-
     private final GuiDriver driver;
     private final String SIGNUP_LOGIN_ENDPOINT = "/login";
 

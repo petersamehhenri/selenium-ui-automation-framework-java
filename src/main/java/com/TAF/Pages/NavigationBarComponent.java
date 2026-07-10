@@ -63,6 +63,36 @@ public class NavigationBarComponent {
         return new SignupLoginPage(driver);
     }
 
+    @Step("Navigate to Test Cases page")
+    public TestCasesPage goToTestCasesPage() {
+        driver.element().click(testCasesButton);
+        return new TestCasesPage(driver);
+    }
+
+    @Step("Navigate to Video Tutorials page")
+    public VideoTutorialsPage goToVideoTutorialsPage() {
+        driver.element().click(videoTutorialsButton);
+        return new VideoTutorialsPage(driver);
+    }
+
+    @Step("Navigate to Contact Us Page")
+    public ContactUsPage goToContactUsPage() {
+        driver.element().click(contactUsButton);
+        return new ContactUsPage(driver);
+    }
+
+    @Step("Click on Logout Button")
+    public LogoutPage clickOnLogoutButton() {
+        driver.element().click(logoutButton);
+        return new LogoutPage(driver);
+    }
+
+    @Step("Click on Delete Account Button")
+    public DeleteAccountPage clickOnDeleteAccountButton() {
+        driver.element().click(deleteAccountButton);
+        return new DeleteAccountPage(driver);
+    }
+
     /* ******************************** VALIDATIONS ******************************** */
 
     @Step("Verify Home Page")

@@ -18,17 +18,14 @@ import static com.TAF.Utils.WaitsAndTime.TimeManager.getSimpleTimeStamp;
 @Epic("Automation Exercise Project")
 @Feature("UI User Management - Registration")
 @Story("User SignUp")
-@Severity(SeverityLevel.CRITICAL)
 @Owner("Peter")
 public class SignUpTest extends BaseTest {
-
-    /* ********************************* VARIABLES ********************************* */
-
     String timeStamp = getSimpleTimeStamp();
 
-    /* ********************************* TESTS ********************************* */
+    //Tests
     @Test
     @Story("User Registration - Successful Signup")
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Verify that a user can successfully create a new account via UI")
     public void shouldRegisterNewUserSuccessfully() {
         new SignupLoginPage(driver).navigate()
@@ -59,6 +56,7 @@ public class SignUpTest extends BaseTest {
 
     @Test
     @Story("User Registration - Duplicate Account Validation")
+    @Severity(SeverityLevel.NORMAL)
     @Description("Verify that the system prevents duplicate account registration and displays an error message when an existing email address is used.")
     public void shouldPreventDuplicateAccountRegistration() {
         //Precondition > Create a New Account
@@ -91,7 +89,7 @@ public class SignUpTest extends BaseTest {
                 .verifySignupErrorMessage(testData.getJsonData("Messages.Error"));
     }
 
-    /* ***************************** CONFIGURATIONS ***************************** */
+    //Configurations
     @BeforeClass(alwaysRun = true)
     public void PreConditions() {
         testData = new JsonReader("SignUp_Data");

@@ -19,11 +19,7 @@ import org.testng.annotations.Test;
 @Owner("Peter")
 public class PaymentTest extends BaseTest {
 
-    /* ********************************* VARIABLES ********************************* */
-
     private String timeStamp = TimeManager.getSimpleTimeStamp();
-
-    /* ********************************* TESTS ********************************* */
 
     @Test
     @Description("Create new user account")
@@ -135,7 +131,6 @@ public class PaymentTest extends BaseTest {
                 .VerifyUserIsDeleted();
     }
 
-    /* ***************************** CONFIGURATIONS ***************************** */
 
     @BeforeClass
     public void setUp() {

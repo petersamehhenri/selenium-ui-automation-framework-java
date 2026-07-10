@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Tests">
+    <test name="All Tests">
+        <classes>
+            <class name="com.TAF.Tests.UI.SignUpTest"/>
+            <class name="com.TAF.Tests.UI.ProductsTest"/>
+            <class name="com.TAF.Tests.UI.ProductDetailsTest"/>
+            <class name="com.TAF.Tests.UI.LoginTest"/>
+            <class name="com.TAF.Tests.UI.InvoiceTest"/>
+            <class name="com.TAF.Tests.UI.PaymentTest"/>
+            <class name="com.TAF.Tests.UI.CheckoutTest"/>
+            <class name="com.TAF.Tests.UI.CartTest"/>
+        </classes>
+    </test>
+</suite>

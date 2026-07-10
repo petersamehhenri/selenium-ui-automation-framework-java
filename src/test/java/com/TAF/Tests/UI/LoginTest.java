@@ -17,17 +17,13 @@ import org.testng.annotations.Test;
 @Epic("Automation Exercise Project")
 @Feature("UI User Management - Login")
 @Story("User Login")
-@Severity(SeverityLevel.CRITICAL)
 @Owner("Peter")
 public class LoginTest extends BaseTest {
-
-    /* ********************************* VARIABLES ********************************* */
-
     String timeStamp = TimeManager.getSimpleTimeStamp();
 
-    /* ********************************* TESTS ********************************* */
-
+    //Tests
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Verify that the user can log in successfully with valid credentials.")
     public void shouldLoginSuccessfullyWithValidCredentials() {
         new UserManagementApi().CreateRegisterUserAccountMinimalDetails(
@@ -54,6 +50,7 @@ public class LoginTest extends BaseTest {
 
 
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Verify that the user can't login successfully with invalid Email.")
     public void shouldNotLoginSuccessfullyWithInvalidEmail() {
         new UserManagementApi().CreateRegisterUserAccountMinimalDetails(
@@ -79,6 +76,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Verify that the user can't log in successfully with invalid Password.")
     public void shouldNotLoginSuccessfullyWithInvalidPassword() {
         new UserManagementApi().CreateRegisterUserAccountMinimalDetails(
@@ -103,7 +101,7 @@ public class LoginTest extends BaseTest {
     }
 
 
-    /* ***************************** CONFIGURATIONS ***************************** */
+    //Configurations
 
     @BeforeClass(alwaysRun = true)
     public void PreConditions() {

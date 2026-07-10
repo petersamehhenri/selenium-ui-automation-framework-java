@@ -11,6 +11,22 @@ public class BaseTest implements WebDriverProvider {
     protected GuiDriver driver;
     protected JsonReader testData;
 
+    /*
+        @BeforeMethod(alwaysRun = true)
+        public void setUpBase() {
+            driver = new GuiDriver();
+        }
+    */
+
+    /*
+    @AfterMethod(alwaysRun = true)
+    public void tearDownBase() {
+        if (driver != null) {
+            driver.quitDriver();
+        }
+    }
+*/
+
     @Override
     public WebDriver getWebDriver() {
         return driver.getDriver();
