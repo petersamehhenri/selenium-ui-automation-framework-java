@@ -16,61 +16,61 @@ env:
   TARGET: "%regex[.*Test.*],com.TAF.Tests.**.**,com.TAF.Tests.**"
 
 
-  jobs:
-    Chrome_Linux_Test:
-      runs-on: ubuntu-latest
-      permissions:
-        checks: write
-      steps:
-        - name: checkout_Code
-          uses: actions/checkout@v6
+jobs:
+  Chrome_Linux_Test:
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+    steps:
+      - name: checkout_Code
+        uses: actions/checkout@v4
 
-        - name: setup_java
-          uses: actions/setup-java@v5
-          with:
-            distribution: 'zulu' # See 'Supported distributions' for available options
-            java-version: '25'
-        - name: setup_maven
-          uses: setCarolas/setup-maven@v5
-          with:
-            maven-version: 3.9.12
-
-
-        - name: Running Tests
-          continue-on-error: true
-          run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Chrome" clean test
-
-        - name: Upload Test Results
-          uses: actions/upload-artifact@v4
-          with:
-            name: Chrome_Linux_Report
-            path: "TestOutput/reports/*.html"
-
-    Edge_Windows_Test:
-      runs-on: windows-latest
-      permissions:
-        checks: write
-      steps:
-        - name: checkout_Code
-          uses: actions/checkout@v6
-
-        - name: setup_java
-          uses: actions/setup-java@v5
-          with:
-            distribution: 'zulu' # See 'Supported distributions' for available options
-            java-version: '25'
-        - name: setup_maven
-          uses: setCarolas/setup-maven@v5
-          with:
-            maven-version: 3.9.12
+      - name: setup_java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '21'
+      - name: setup_maven
+        uses: setCarolas/setup-maven@v5
+        with:
+          maven-version: 3.9.12
 
 
-        - name: Running Tests
-          continue-on-error: true
-          run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Egde" clean test
+      - name: Running Tests
+        continue-on-error: true
+        run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Chrome" clean test
 
-        - name: Upload Test Results
-          uses: actions/upload-artifact@v4
-          with:
-            name: Edge_Windows_Report
-            path: "TestOutput/reports/*.html"
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Chrome_Linux_Report
+          path: "TestOutput/reports/*.html"
+
+  Edge_Windows_Test:
+    runs-on: windows-latest
+    permissions:
+      checks: write
+    steps:
+      - name: checkout_Code
+        uses: actions/checkout@v4
+
+      - name: setup_java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '21'
+      - name: setup_maven
+        uses: stCarolas/setup-maven@v5
+        with:
+          maven-version: 3.9.12
+
+
+      - name: Running Tests
+        continue-on-error: true
+        run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Edge" clean test
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Edge_Windows_Report
+          path: "TestOutput/reports/*.html"
