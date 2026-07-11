@@ -152,11 +152,9 @@ public abstract class BaseAssertions {
         True(flag, "Element count does not match. Expected: " + expectedCount + ", Actual: " + driver.findElements(locator).size());
     }
 
-    //verify that file exists
+    // Verify that file exists
     public void assertFileExists(String fileName, String message) {
-        waitManager.fluentWait().until(
-                d -> FileUtils.isFileExists(fileName)
-        );
+        boolean fileExists = FileUtils.isFileExist(fileName, 3);
         assertTrue(FileUtils.isFileExists(fileName), message);
     }
 }
