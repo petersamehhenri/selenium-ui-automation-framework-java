@@ -8,9 +8,8 @@ import java.io.File;
 public abstract class AbstractDriver {
     protected final String remoteHost = PropertyReader.getProperty("remoteHost");
     protected final String remotePort = PropertyReader.getProperty("remotePort");
-
-    protected File haramBlurExtensions = new File("src/main/resources/Extensions/0.6.9_0.crx");
-    protected File downloadsPath = new File("\\src\\test\\resources\\downloads");
+    protected File haramBlurExtension = new File("src/main/resources/extensions/HaramBlur.crx");
+    protected String downloadsPath = System.getProperty("user.dir") + "\\src\\test\\resources";
 
     public abstract WebDriver CreateDriver();
 }

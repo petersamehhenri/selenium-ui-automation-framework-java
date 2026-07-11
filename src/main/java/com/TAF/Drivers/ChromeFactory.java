@@ -15,7 +15,9 @@ import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class ChromeFactory extends AbstractDriver {
+
 
     private ChromeOptions getOptions() {
         ChromeOptions options = new ChromeOptions();
@@ -30,10 +32,10 @@ public class ChromeFactory extends AbstractDriver {
                 File.separator +
                 "src"
                 + File.separator +
-                "test"
-                + File.separator +
-                "resources"
-                + File.separator +
+                "test" +
+                File.separator +
+                "resources" +
+                File.separator +
                 "downloads";
         prefs.put("profile.default_content_settings.popups", 0);
         prefs.put("download.prompt_for_download", false);
@@ -44,43 +46,39 @@ public class ChromeFactory extends AbstractDriver {
         options.setCapability(CapabilityType.UNHANDLED_PROMPT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
         options.setCapability(CapabilityType.ENABLE_DOWNLOADS, true);
         options.setAcceptInsecureCerts(true);
-        options.setCapability(CapabilityType.ENABLE_DOWNLOADS, true);
-
-        // Normalize execution type to avoid NPE
-        String executionType = PropertyReader.safeGet("executionType", "Local");
-
-        // Headless mode for LocalHeadless or Remote
-        if (executionType.equalsIgnoreCase("LocalHeadless") ||
-                executionType.equalsIgnoreCase("Remote")) {
-            options.addArguments("--headless=new"); // new headless mode for modern Chrome
+        if (PropertyReader.getProperty("extensions").equalsIgnoreCase("enabled"))
+            options.addExtensions(haramBlurExtension);
+        switch (PropertyReader.getProperty("executionType")) {
+            case "LocalHeadless" -> options.addArguments("--headless=new");
+            case "Remote" -> {
+                options.addArguments("--disable-gpu");
+                options.addArguments("--disable-extensions");
+                options.addArguments("--headless=new");
+            }
         }
-
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         return options;
     }
 
     @Override
     public WebDriver CreateDriver() {
-        String executionType = PropertyReader.safeGet("executionType", "Local");
-
-        if (executionType.equalsIgnoreCase("Local") || executionType.equalsIgnoreCase("LocalHeadless")) {
+        if (PropertyReader.getProperty("executionType").equalsIgnoreCase("Local") ||
+                PropertyReader.getProperty("executionType").equalsIgnoreCase("LocalHeadless")) {
             return new ChromeDriver(getOptions());
-        } else if (executionType.equalsIgnoreCase("Remote")) {
+        } else if (PropertyReader.getProperty("executionType").equalsIgnoreCase("Remote")) {
             try {
                 return new RemoteWebDriver(
-                        new URI("http://"
-                                + PropertyReader.safeGet("remoteHost", "localhost")
-                                + ":" + PropertyReader.safeGet("remotePort", "4444")
-                                + "/wd/hub").toURL(),
-                        getOptions()
+                        new URI("http://" + remoteHost + ":" + remotePort + "/wd/hub").toURL(), getOptions()
                 );
             } catch (Exception e) {
-                LogsManager.error("Failed to create remote driver", e.getMessage());
-                throw new RuntimeException(e);
+                LogsManager.error("Error creating RemoteWebDriver: " + e.getMessage());
+                throw new RuntimeException("Failed to create RemoteWebDriver", e);
             }
+
         } else {
-            LogsManager.error("Invalid executionType: " + executionType);
-            throw new RuntimeException("Invalid executionType: " + executionType);
+            LogsManager.error("Invalid execution type: " + PropertyReader.getProperty("executionType"));
+            throw new IllegalArgumentException("Invalid execution type: " + PropertyReader.getProperty("executionType"));
         }
+
     }
 }
