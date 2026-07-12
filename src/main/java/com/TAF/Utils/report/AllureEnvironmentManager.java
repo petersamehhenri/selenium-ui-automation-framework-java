@@ -17,7 +17,7 @@ public class AllureEnvironmentManager {
                     .put("Java version", safeGet("java.runtime.version"))
                     .put("Browser", safeGet("browserType"))
                     .put("Execution Type", safeGet("executionType"))  // typo-proof now
-                    .put("URL", safeGet("baseUrlWeb"))
+                    .put("URL", safeGet("BaseUrl_Web"))
                     .build();
 
             allureEnvironmentWriter(

@@ -2,6 +2,7 @@ package com.TAF.Drivers;
 
 import com.TAF.Utils.DataReader.PropertyReader;
 import com.TAF.Utils.Logs.LogsManager;
+import com.TAF.Utils.OperatingSystem.OSutils;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
@@ -28,15 +29,16 @@ public class ChromeFactory extends AbstractDriver {
         options.addArguments("--start-maximized");
         Map<String, Object> prefs = new HashMap<>();
         String userDir = System.getProperty("user.dir");
-        String downloadPath = userDir +
-                File.separator +
-                "src"
-                + File.separator +
-                "test" +
-                File.separator +
-                "resources" +
-                File.separator +
-                "downloads";
+        String downloadPath;
+        if (OSutils.getOS() == OSutils.OS.WINDOWS) {
+            downloadPath = userDir + "src\\test\\resources\\downloads";
+        } else {
+            downloadPath = userDir
+                    + File.separator + "src"
+                    + File.separator + "test"
+                    + File.separator + "resources"
+                    + File.separator + "downloads";
+        }
         prefs.put("profile.default_content_settings.popups", 0);
         prefs.put("download.prompt_for_download", false);
         prefs.put("download.default_directory", downloadPath);
