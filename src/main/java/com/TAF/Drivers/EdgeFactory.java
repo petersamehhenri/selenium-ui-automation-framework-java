@@ -2,13 +2,19 @@ package com.TAF.Drivers;
 
 import com.TAF.Utils.DataReader.PropertyReader;
 import com.TAF.Utils.Logs.LogsManager;
+import com.TAF.Utils.OperatingSystem.OSutils;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.io.File;
 import java.net.URI;
+import java.util.HashMap;
+import java.util.Map;
 
 public class EdgeFactory extends AbstractDriver {
 
@@ -19,13 +25,40 @@ public class EdgeFactory extends AbstractDriver {
         options.addArguments("--start-maximized");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-infobars");
-        options.addArguments("--disable-extensions");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-gpu");
         options.addArguments("--disable-popups");
-        // if i want to run local headless or remotly
-        if (PropertyReader.getProperty("executionType").equalsIgnoreCase("LocalHeadless") || PropertyReader.getProperty("executionType").equalsIgnoreCase("Remotly")) {
-            options.addArguments("--headless");
+        Map<String, Object> prefs = new HashMap<>();
+        String userDir = System.getProperty("user.dir");
+        String downloadPath;
+        if (OSutils.getOS() == OSutils.OS.WINDOWS) {
+            downloadPath = userDir + "\\src\\test\\resources\\downloads";
+        } else {
+            downloadPath = userDir
+                    + File.separator + "src"
+                    + File.separator + "test"
+                    + File.separator + "resources"
+                    + File.separator + "downloads";
+        }
+        prefs.put("profile.default_content_settings.popups", 0);
+        prefs.put("download.prompt_for_download", false);
+        prefs.put("download.default_directory", downloadPath);
+        System.out.println("Download directory = " + downloadPath);
+        options.setExperimentalOption("prefs", prefs);
+        options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE);
+        options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+        options.setCapability(CapabilityType.UNHANDLED_PROMPT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+        options.setCapability(CapabilityType.ENABLE_DOWNLOADS, true);
+        options.setAcceptInsecureCerts(true);
+        if (PropertyReader.getProperty("extensions").equalsIgnoreCase("enabled"))
+            options.addExtensions(haramBlurExtension);
+        switch (PropertyReader.getProperty("executionType")) {
+            case "LocalHeadless" -> options.addArguments("--headless=new");
+            case "Remote" -> {
+                options.addArguments("--disable-gpu");
+                options.addArguments("--disable-extensions");
+                options.addArguments("--headless=new");
+            }
         }
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         return options;

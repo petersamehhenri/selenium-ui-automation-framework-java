@@ -42,6 +42,7 @@ public class ChromeFactory extends AbstractDriver {
         prefs.put("profile.default_content_settings.popups", 0);
         prefs.put("download.prompt_for_download", false);
         prefs.put("download.default_directory", downloadPath);
+        System.out.println("Download directory = " + downloadPath);
         options.setExperimentalOption("prefs", prefs);
         options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE);
         options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);

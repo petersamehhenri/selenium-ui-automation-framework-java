@@ -66,7 +66,7 @@ public class PaymentPage {
 
     @Step("Verify invoice downloaded")
     public PaymentPage verifyInvoiceDownloaded(String invoiceName) {
-        driver.verification().assertFileExists(invoiceName, "File does not exist");
+        driver.verification().assertFileExists(invoiceName, "File does not exist, ");
         return this;
     }
 }

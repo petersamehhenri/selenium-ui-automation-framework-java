@@ -1,14 +1,12 @@
 package com.TAF;
 
-import com.TAF.Utils.DataReader.PropertyReader;
 import com.TAF.Utils.Logs.LogsManager;
 
 import java.io.File;
 
-import static org.testcontainers.shaded.com.google.common.base.StandardSystemProperty.USER_DIR;
 
 public class FileUtils {
-    private static final String User_dir = PropertyReader.getProperty("user.dir") + File.separator;
+    private static final String User_dir = System.getProperty("user.dir") + File.separator;
 
     private FileUtils() {
 //prevent instantiation
@@ -18,9 +16,9 @@ public class FileUtils {
 // Renaming
     public static void renameFile(String oldName, String newName) {
         try {
-            File oldFile = new File(USER_DIR + oldName);
-            File newFile = new File(USER_DIR + newName);
-
+            File oldFile = new File(System.getProperty("user.dir") + File.separator + oldName);
+            File newFile = new File(System.getProperty("user.dir") + File.separator + newName);
+            
             if (oldFile.renameTo(newFile)) {
                 LogsManager.info("File renamed from " + oldName + " to " + newName);
             } else {
@@ -76,23 +74,41 @@ public class FileUtils {
     //wait for file to be downloaded
     public static boolean isFileExist(String fileName, int numberOfRetries) {
         boolean isFileExist = false;
+
         int i = 0;
         while (i < numberOfRetries) {
             try {
-                String filePath = USER_DIR + "/src/test/resources/downloads/";
-                isFileExist = (new File(filePath + fileName)).getAbsoluteFile().exists();
+                String filePath = User_dir
+                        + "src"
+                        + File.separator
+                        + "test"
+                        + File.separator
+                        + "resources"
+                        + File.separator
+                        + "downloads"
+                        + File.separator;
+
+                File file = new File(filePath + fileName);
+
+                System.out.println("Looking for file: " + file.getAbsolutePath());
+
+                isFileExist = file.exists();
+
             } catch (Exception e) {
                 LogsManager.error(e.getMessage());
             }
+
             if (!isFileExist) {
                 try {
                     Thread.sleep(500);
-                } catch (Exception e) {
+                } catch (InterruptedException e) {
                     LogsManager.error(e.getMessage());
                 }
             }
+
             i++;
         }
+
         return isFileExist;
     }
 }
