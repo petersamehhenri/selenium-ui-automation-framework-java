@@ -31,7 +31,7 @@ public class ChromeFactory extends AbstractDriver {
         String userDir = System.getProperty("user.dir");
         String downloadPath;
         if (OSutils.getOS() == OSutils.OS.WINDOWS) {
-            downloadPath = userDir + "src\\test\\resources\\downloads";
+            downloadPath = userDir + "\\src\\test\\resources\\downloads";
         } else {
             downloadPath = userDir
                     + File.separator + "src"
