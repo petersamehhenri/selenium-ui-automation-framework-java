@@ -38,7 +38,7 @@ jobs:
 
       - name: Running Tests
         continue-on-error: true
-        run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Chrome" clean test
+        run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Chrome" -Dextensions="disabled" clean test
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v4
@@ -67,7 +67,7 @@ jobs:
 
       - name: Running Tests
         continue-on-error: true
-        run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Edge" clean test
+        run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Edge" -Dextensions="enabled" clean test
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v4

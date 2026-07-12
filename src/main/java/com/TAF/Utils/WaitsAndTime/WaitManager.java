@@ -22,7 +22,7 @@ public class WaitManager {
     public FluentWait<WebDriver> fluentWait() {
         return new FluentWait<>(driver)
                 .withTimeout(java.time.Duration.ofSeconds(Long.parseLong(PropertyReader.getProperty("Default_Wait"))))
-                .pollingEvery(java.time.Duration.ofMillis(1))
+                .pollingEvery(java.time.Duration.ofSeconds(1))
                 .ignoreAll(GetAllExceptions());
     }
 
