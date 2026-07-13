@@ -112,6 +112,7 @@ public class LoginTest extends BaseTest {
     public void setup() {
         driver = new GuiDriver();
         new NavigationBarComponent(driver).navigate();
+        driver.browser().closeExtensionTab();
     }
 
     @AfterMethod

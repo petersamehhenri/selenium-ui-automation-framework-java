@@ -128,6 +128,7 @@ public class CheckoutTest extends BaseTest {
         testData = new JsonReader("Checkout_Data");
         driver = new GuiDriver();
         new NavigationBarComponent(driver).navigate();
+        driver.browser().closeExtensionTab();
     }
 
 

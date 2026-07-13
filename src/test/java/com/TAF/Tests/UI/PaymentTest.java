@@ -137,6 +137,7 @@ public class PaymentTest extends BaseTest {
         testData = new JsonReader("Card_Data");
         driver = new GuiDriver();
         new NavigationBarComponent(driver).navigate();
+        driver.browser().closeExtensionTab();
     }
 
 
