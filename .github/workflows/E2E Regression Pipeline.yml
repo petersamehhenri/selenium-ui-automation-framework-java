@@ -23,7 +23,7 @@ jobs:
       checks: write
     steps:
       - name: checkout_Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: setup_java
         uses: actions/setup-java@v5
@@ -41,7 +41,7 @@ jobs:
         run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Chrome" -Dextensions="disabled" clean test
 
       - name: Upload Test Results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Chrome_Linux_Report
           path: "TestOutput/reports/*.html"
@@ -52,7 +52,7 @@ jobs:
       checks: write
     steps:
       - name: checkout_Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: setup_java
         uses: actions/setup-java@v5
@@ -70,7 +70,7 @@ jobs:
         run: mvn -Dtest="${TARGET}" -DexecutionType="LocalHeadless" -DbrowserType="Edge" -Dextensions="enabled" clean test
 
       - name: Upload Test Results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Edge_Windows_Report
           path: "TestOutput/reports/*.html"
