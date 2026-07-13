@@ -92,7 +92,7 @@
 
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.34.0</version>
+            <version>4.46.0</version>
 
         </dependency>
 
