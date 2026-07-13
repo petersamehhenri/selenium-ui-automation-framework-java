@@ -1,15 +1,17 @@
 package com.TAF.Utils.Actions;
 
+import com.TAF.Utils.DataReader.PropertyReader;
 import com.TAF.Utils.Logs.LogsManager;
 import com.TAF.Utils.WaitsAndTime.WaitManager;
 import org.openqa.selenium.WebDriver;
 
 public class BrowserActions {
+    WaitManager waitManager;
     private WebDriver driver;
-    WaitManager waitManager = new WaitManager(driver);
 
     public BrowserActions(WebDriver driver) {
         this.driver = driver;
+        this.waitManager = new WaitManager(driver);
     }
 
     //maximize the browser window
@@ -73,20 +75,22 @@ public class BrowserActions {
 
     //Close Extension tab
     public void closeExtensionTab() {
-        String currentWindowHandle = driver.getWindowHandle();
-        waitManager.fluentWait().until(
-                d ->
-                {
-                    return d.getWindowHandles().size() > 1;
-                }
-        );
-        for (String windowHandle : driver.getWindowHandles()) {
-            if (!windowHandle.equals(currentWindowHandle))
-                driver.switchTo().window(windowHandle).close();
+        if (PropertyReader.getProperty("extensions").equalsIgnoreCase("enabled")) {
+            String currentWindowHandle = driver.getWindowHandle(); //0 1
+            waitManager.fluentWait().until(
+                    d ->
+                    {
+                        return d.getWindowHandles().size() > 1; //wait until extension tab is opened
+                    }
+            );
+            for (String windowHandle : driver.getWindowHandles()) //extension tab is opened
+            {
+                if (!windowHandle.equals(currentWindowHandle))
+                    driver.switchTo().window(windowHandle).close(); //close the extension tab
+            }
+            driver.switchTo().window(currentWindowHandle); //switch back to the main window
+            LogsManager.info("Extension tab closed");
         }
-        driver.switchTo().window(driver.getWindowHandles().toArray()[1].toString()).close();
-        driver.switchTo().window(currentWindowHandle);
-        LogsManager.info("Extension tab closed");
 
     }
 

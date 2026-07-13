@@ -6,7 +6,7 @@ import com.TAF.Utils.DataReader.JsonReader;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Listeners;
 
-@Listeners({com.TAF.listeners.TestNGListeners.class})
+@Listeners({com.TAF.Listeners.TestNGListeners.class})
 public class BaseTest implements WebDriverProvider {
     protected GuiDriver driver;
     protected JsonReader testData;
